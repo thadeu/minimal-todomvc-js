@@ -2,7 +2,7 @@
 
 this repository use vanilla javascript to create a todomvc.
 
-# LICENSE
+## LICENSE
 
 MIT License
 
