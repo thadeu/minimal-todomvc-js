@@ -1,0 +1,14 @@
+{
+  "name": "Minimal TodoMVC JS",
+  "version": "1.0.1",
+  "description": "An extension todomvc-js to chrome",
+  "permissions": ["activeTab", "tabs", "storage"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' https://*.jquery.com; object-src 'self'"
+}

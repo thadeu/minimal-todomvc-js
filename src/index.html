@@ -10,7 +10,8 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="app.css">
 
-  <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+    crossorigin="anonymous"></script>
   <script src="observer.js"></script>
   <script src="todo-model.js"></script>
   <script src="todo-view.js"></script>
@@ -19,13 +20,12 @@
 </head>
 
 <body>
+  <button id="changeColor"></button>
   <div class="container mx-auto">
-    <header class="flex justify-center items-center p-4">
-      <div class="text-center py-4 lg:px-4">
-        <div class="p-2 bg-indigo-darker items-center text-indigo-lightest leading-none lg:rounded-full flex lg:inline-flex"
-          role="alert">
-          <span class="flex rounded-full bg-indigo uppercase px-2 py-1 text-xs font-bold mr-3">Study</span>
-          <span class="font-semibold mr-2 text-left flex-auto">Todo MVC only Javascript</span>
+    <header class="flex justify-center items-center pb-2">
+      <div class="text-center pb-4 lg:px-4">
+        <div class="p-2 text-indigo-darker items-center leading-none lg:rounded-full flex lg:inline-flex">
+          <h3 class="font-semibold mr-2 text-left flex-auto">Todo MVC only Javascript</h3>
         </div>
       </div>
     </header>
@@ -36,7 +36,7 @@
       <div class="flex justify-center">
         <form>
           <input type="text" class="todo-text-box appearance-none border rounded py-2 px-3 mr-2 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" />
-  
+
           <button class="add-todo-button bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center outline-none">
             <span>Add new todo</span>
           </button>
@@ -45,4 +45,5 @@
     </div>
   </div>
 </body>
+
 </html>
